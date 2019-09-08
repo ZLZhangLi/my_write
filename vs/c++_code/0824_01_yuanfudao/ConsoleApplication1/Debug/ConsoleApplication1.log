@@ -1,0 +1,12 @@
+﻿生成启动时间为 2019/8/24 20:46:32。
+     1>项目“F:\written examination\vs\c++_code\0824_01_yuanfudao\ConsoleApplication1\ConsoleApplication1.vcxproj”在节点 2 上(Build 个目标)。
+     1>Link:
+         D:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"F:\written examination\vs\c++_code\0824_01_yuanfudao\Debug\ConsoleApplication1.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"F:\written examination\vs\c++_code\0824_01_yuanfudao\Debug\ConsoleApplication1.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"F:\written examination\vs\c++_code\0824_01_yuanfudao\Debug\ConsoleApplication1.lib" /MACHINE:X86 Debug\0824_01.obj
+         Debug\0824_02_jingdong.obj
+     1>0824_02_jingdong.obj : error LNK2005: _main 已经在 0824_01.obj 中定义
+     1>F:\written examination\vs\c++_code\0824_01_yuanfudao\Debug\ConsoleApplication1.exe : fatal error LNK1169: 找到一个或多个多重定义的符号
+     1>已完成生成项目“F:\written examination\vs\c++_code\0824_01_yuanfudao\ConsoleApplication1\ConsoleApplication1.vcxproj”(Build 个目标)的操作 - 失败。
+
+生成失败。
+
+已用时间 00:00:00.39
