@@ -11,6 +11,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "tujia", "tujia\tujia.vcxpro
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "271", "271\271.vcxproj", "{EE44EF6D-FDE6-46EA-9F22-5E7CFD9F2B7D}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "dianxin", "dianxin\dianxin.vcxproj", "{9F19BD9F-EF85-475B-B5EE-F487F9AAD944}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -33,6 +35,10 @@ Global
 		{EE44EF6D-FDE6-46EA-9F22-5E7CFD9F2B7D}.Debug|Win32.Build.0 = Debug|Win32
 		{EE44EF6D-FDE6-46EA-9F22-5E7CFD9F2B7D}.Release|Win32.ActiveCfg = Release|Win32
 		{EE44EF6D-FDE6-46EA-9F22-5E7CFD9F2B7D}.Release|Win32.Build.0 = Release|Win32
+		{9F19BD9F-EF85-475B-B5EE-F487F9AAD944}.Debug|Win32.ActiveCfg = Debug|Win32
+		{9F19BD9F-EF85-475B-B5EE-F487F9AAD944}.Debug|Win32.Build.0 = Debug|Win32
+		{9F19BD9F-EF85-475B-B5EE-F487F9AAD944}.Release|Win32.ActiveCfg = Release|Win32
+		{9F19BD9F-EF85-475B-B5EE-F487F9AAD944}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
