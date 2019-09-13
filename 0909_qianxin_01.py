@@ -35,8 +35,6 @@ class Solution:
             else:
                 # We have found the split point, i.e. the LCA node.
                 return node.val
-
-
 n = int(input())
 m = list(map(int,input().strip().split()))
 p,q = list(map(int,input().strip().split()))
