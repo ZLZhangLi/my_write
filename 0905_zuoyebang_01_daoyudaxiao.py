@@ -1,6 +1,6 @@
 import sys
 class Solution(object):
-    nextStep = [[0, 1], [1, 0], [0, -1], [-1, 0]]
+    nextStep = [[0, 1], [1, 0], [0, -1], [-1, 0]]    #下、右、上、左
     step = 0
 
     def maxAreaOfIsland(self, grid):
