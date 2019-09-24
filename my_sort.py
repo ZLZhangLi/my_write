@@ -1,7 +1,15 @@
 # m = list(map(int,input().strip().split()))
 def bubble_sort(alist):
     '''冒泡排序'''
-    pass
+    isSort = True
+    for i in range(len(alist) - 1):
+        for j in range(len(alist) - 1 - i):
+            if alist[j] > alist[j + 1]:
+                isSort = False
+                alist[j], alist[j + 1] = alist[j + 1], alist[j]
+        if isSort:
+            break
+    return alist
 
 def select_sort(alist):
     '''选择排序'''
@@ -26,9 +34,31 @@ def shell_sort():
     '''希尔排序'''
     pass
 
-def quick_sort(alist):
+def Quick_sort(alist):
     '''快速排序'''
-    pass
+    def get_index(arr,left,right):
+        key = left
+        while left < right:
+            while left < right and arr[right] >= arr[key]:
+                right -= 1
+            while left < right and arr[left] <= arr[key]:
+                left += 1
+            arr[left], arr[right] = arr[right], arr[left]
+        arr[left], arr[key] = arr[key], arr[left]
+        return left
+
+    def quick_sort(arr, left, right):
+        if left >= right:
+            return
+        mid = get_index(arr, left, right)
+        quick_sort(arr, left, mid)
+        quick_sort(arr, mid + 1, right)
+
+    n = len(alist)
+    if n <= 1:
+        return alist
+    quick_sort(alist,0,n-1)
+    return alist
 
 if __name__ == '__main__':
     m = [1,4,3,5,11,6]

@@ -21,4 +21,4 @@ class Solution(object):
             m_dict[nums[i]] = i
         for i in range(len(nums)):
             if target- nums[i] in m_dict.keys():
-                return [i,m_dict[target- nums[i]]]
+                return [i,m_dict[target - nums[i]]]
