@@ -34,6 +34,30 @@ def shell_sort():
     '''希尔排序'''
     pass
 
+def merge_sort(alist):
+    '''归并排序'''
+    n = len(alist)
+    if n <= 1:
+        return alist
+    mid = n // 2
+    #left 采用归并排序后形成的有序的新的列表
+    left_li = merge_sort(alist[:mid])
+    #right 采用归并排序后形成的有序的新的列表
+    right_li = merge_sort(alist[mid:])
+    left_pointer, right_pointer = 0, 0
+    res = []
+    while left_pointer < len(left_li) and right_pointer < len(right_li):
+        if left_li[left_pointer] < right_li[right_pointer]:
+            res.append(left_li[left_pointer])
+            left_pointer += 1
+        else:
+            res.append(right_li[right_pointer])
+            right_pointer += 1
+    res += left_li[left_pointer:]
+    res += right_li[right_pointer:]
+    return res
+
+
 def Quick_sort(alist):
     '''快速排序'''
     def get_index(arr,left,right):
