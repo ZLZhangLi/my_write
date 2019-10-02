@@ -152,6 +152,17 @@ class Solution4():
                 stack.append(currentNode.left)
         return vals
 
+def TreeNums(root):
+    if not root: return 0
+    nums = TreeNums(root.left)
+    nums += TreeNums(root.right)
+    return nums + 1
+def TreeHights(root):
+    if not root: return 0
+    ldepth = TreeHights(root.left)
+    rdepth = TreeHights(root.right)
+    return max(ldepth,rdepth) + 1
+
 if __name__ == '__main__':
     # 实例化根节点
     root_node = TreeNode('a')
@@ -181,3 +192,5 @@ if __name__ == '__main__':
     print(c.bfs(m_root))
     d = Solution4()
     print(d.dfs(m_root))
+    print(TreeHights(m_root))
+    print(TreeNums(m_root))
