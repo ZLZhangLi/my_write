@@ -1,7 +1,7 @@
 import queue
 class TreeNode(object):
-    def __init__(self,x):
-        self.val = x
+    def __init__(self,data):
+        self.val = data
         self.left = None
         self.right = None
     def set_data(self, data):
