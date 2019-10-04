@@ -120,16 +120,28 @@ class Solution3():
         '''广度优先'''
         if not root: return
         #队列，保存节点
-        que = queue.Queue()
-        que.put(root)
+        # que = queue.Queue()
+        # que.put(root)
+        # res = []
+        # while not que.empty():
+        #     curNode = que.get()
+        #     res.append(curNode.val)
+        #     if curNode.left:
+        #         que.put(curNode.left)
+        #     if curNode.right:
+        #         que.put(curNode.right)
+        # return res
+
+        que = []
+        que.append(root)
         res = []
-        while not que.empty():
-            curNode = que.get()
+        while que:
+            curNode = que.pop(0)
             res.append(curNode.val)
             if curNode.left:
-                que.put(curNode.left)
+                que.append(curNode.left)
             if curNode.right:
-                que.put(curNode.right)
+                que.append(curNode.right)
         return res
 class Solution4():
     def dfs(self,root):
