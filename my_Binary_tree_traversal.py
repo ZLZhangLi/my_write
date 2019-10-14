@@ -24,9 +24,7 @@ def listcreattree(root, llist, i):
             return None
         else:
             root = TreeNode(llist[i])
-
             root.left = listcreattree(root.left, llist, 2 * i + 1)
-
             root.right = listcreattree(root.right, llist, 2 * i + 2)
             return root
     return root
